@@ -130,7 +130,7 @@ dist
 .pnp.*
 
 # dotenv environment variable files
-.env  # Add this line
+.env 
 .env.*
 .env.development.local
 .env.test.local
