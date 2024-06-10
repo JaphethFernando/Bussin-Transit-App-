@@ -1,0 +1,50 @@
+/* nav.css */
+
+/* Style the navbar */
+.navbar {
+  background-color: #ffffff; /* Navbar background color */
+  box-shadow: 0px 2px 4px rgba(49, 49, 49, 0.1); /* Example box shadow */
+}
+
+body {
+  padding-top: 56px; /* Adjust as needed based on the height of your navbar */
+}
+
+.navbar-brand {
+  font-weight: bold; /* Example font weight */
+}
+
+.navbar-nav .nav-link {
+  color: #333333; /* Navbar link color */
+  font-weight: bold; /* Example font weight */
+}
+
+.navbar-nav .nav-link.active {
+  color: #007bff; /* Active link color */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Optional: Adjust styles for smaller screens */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: 14px; /* Example font size */
+  }
+}
+
+/* Add new styles here */
+/* Active navigation link styles */
+.navbar-nav .nav-item.active .nav-link {
+  color: #fff; /* Active link text color */
+  background-color: #007bff; /* Active link background color */
+  border-radius: 0.25rem; /* Optional: Add some border-radius to make it visually appealing */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+/* Hover styles for navigation links */
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Hovered link text color */
+  text-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow effect on hover */
+}

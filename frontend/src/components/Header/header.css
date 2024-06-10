@@ -1,0 +1,153 @@
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Search section styles */
+#search {
+  background-color: rgb(184, 184, 184);
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+}
+#search label {
+  font-weight: bold;
+}
+
+#search input[type="text"],
+#search input[type="datetime-local"],
+#search button {
+  margin-top: 10px;
+}
+
+/* Buses section styles */
+#buses .card {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgb(184, 184, 184); 
+  border-radius: 8px; /* Rounded corners */
+}
+.autocomplete-loading {
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  position: relative;
+}
+
+.autocomplete-loading::after {
+  content: "Loading...";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #495057;
+}
+/* Bus badge styles */
+.bus-badge {
+  display: flex;
+  align-items: flex-start;
+}
+
+.bus-square {
+  width: 3em;
+  height: 3em;
+  line-height: 3em;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10%; /* Rounded corners */
+}
+
+.bus-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5em;
+}
+
+.bus-name {
+  margin-top: auto;
+}
+
+.badge.bg-secondary {
+  align-self: flex-start;
+  margin-right: 0.5em;
+}
+
+.badge.bg-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4em;
+  height: 4em;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  border-radius: 10%; /* Rounded corners */
+}
+
+/* Pagination dots styles */
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ddd;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 1rem;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+/* Apply overflow wrap to break long words */
+.card-title,
+.card-text,
+.list-group-item {
+  overflow-wrap: break-word;
+}
+
+.dropdown-item:hover {
+  color: #fff;
+  background-color: #007bff;
+}
+.dot.active {
+  background-color: #007bff;
+}
